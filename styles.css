@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  nav {
+      display: flex;
+  }
+
+  p {
+      display: inline-block;
+      width: 50%;
+      border: 1px solid black;
+  }
+
+  .nav-ul {
+      display: inline-block;
+      width: 50%;
+      border: 1px solid black;
+  }
+
+  .nav-links {
+    display: inline-block;  
+  }
+
+  nav,
+  footer {
+    padding: 1% 0;
+    background-color: #aaa;
+  }
+  
+  nav {
+    font-family: 'Spectral', serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  
+  header {
+    padding: 12% 0;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  section {
+    min-height: 200px;
+    padding: 6% 0;
+    background-color: #bbb;
+  }
+  
+  section:nth-child(even) {
+    background-color: #ddd;
+  }
+  
+/* Flex Box for Skills */
+
+  .skills-flexbox {
+    margin: 15px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column-skills {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  
+  .skills {
+      list-style: none;
+  }
+
+  .logo {
+      width: 100px;
+      height: 50px;
+  }
+
+  .contact-logo {
+     width: 50px;
+  }
+
+  a {
+      text-decoration: none;
+  }
