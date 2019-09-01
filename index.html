@@ -2,54 +2,67 @@
 <html lang="en">
 <head>
     <title>William Bae</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Karla|Spectral|Raleway&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Spectral|Raleway|Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <nav role="navigation">
-        <p>William Bae</p>
-        <ul class="nav-ul">
-            <li class="nav-links">
-                <a href="placeholder for ABOUT ME">About Me</a>
+        <p class="nav-p">William Bae</p>
+        <div class="hamburger">
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle"/>
+            <div class="menu">
+                <a href="#aboutme" class="hamburger-a">About Me</a>
+                <a href="#skills" class="hamburger-a">Skills</a>
+                <a href="#projects" class="hamburger-a">Projects</a>
+                <a href="#contact" class="hamburger-a">Contact</a>
+            </div>
+        </div>
+        <!-- <ul class="nav-ul">
+            <li class="nav-li">
+                <a href="placeholder for ABOUT ME" class="nav-links">About Me</a>
             </li>
-            <li class="nav-links">
-                    <a href="placeholder for SKILLS">Skills</a>
+            <li class="nav-li">
+                    <a href="placeholder for SKILLS" class="nav-links">Skills</a>
                 </li>
-            <li class="nav-links">
-                <a href="placeholder for PROJECTS">Projects</a>
+            <li class="nav-li">
+                <a href="placeholder for PROJECTS" class="nav-links">Projects</a>
             </li>
-            <li class="nav-links">
-                <a href="placeholder for CONTACT">Contact</a>
+            <li class="nav-li">
+                <a href="placeholder for CONTACT" class="nav-links">Contact</a>
             </li>
-        </ul>
+        </ul> -->
     </nav>
     <main role="main">
-        <header role="banner">
+        <header role="banner" id="aboutme">
             <h1>About Me</h1>
-            <p>INSERT HERO IMAGE</p>
-            <p>Hi, I’m William. I’m an aspiring full-stack developer who loves to code. I started my professional career as a financial 
-               consultant. However, something in my career seemed to be lacking. I’ve always enjoyed exercising my creativity, but that 
-               wasn’t a skill regularly used in the finance sector.!</p>
+            <div class="hero">
+                <h2 class="hero-heading">Hi, I'm William. I'm an aspiring full-stack developer who loves to code!</h2>
+            </div>
+            <p class="bio">I began my professional career as a financial consultant. However, something in my career seemed to be lacking. I’ve always enjoyed 
+            exercising my creativity, but that wasn’t a skill regularly used in the finance sector.</p>
 
-            <p>Cue, coding! I see it as the perfect marriage of creativity and logic. It’s amazing how you can turn ideas into tangible 
-               products through logic and an analytical mind. I felt that with my finance background, it would help ease the transition 
-               into coding since I could apply my problem-solving and teaming skills I’ve developed in my former profession. To me, 
-               coding provides a strong sense of fulfillment and excitement. It’s a wonderful feeling when finally getting a piece of 
-               your code to work!</p>
+            <p class="bio">Cue, coding! I see it as the perfect marriage of creativity and logic. It’s amazing how you can turn ideas into tangible 
+            products through logic and an analytical mind. I felt that with my finance background, it would help ease the transition 
+            into coding since I could apply my problem-solving and teaming skills I’ve developed in my former profession. To me, 
+            coding provides a strong sense of fulfillment and excitement. It’s a wonderful feeling when finally getting a piece of 
+            your code to work!</p>
 
-            <p>Outside of coding, you can often find me playing games (MMOs, RPGs, or a combination of both), playing pick-up basketball, 
-               or finding new, delicious foods/restaurants to enjoy with my friends.</p>
+            <p class="bio">Outside of coding, you can often find me playing games (MMOs, RPGs, or a combination of both), playing pick-up basketball, 
+            or finding new, delicious restaurants to enjoy with my friends.</p>
         </header>
 
-        <section class="skills-section">
-            <h2>Skills</h2>
-            <div class="skils-flexbox">
+        <section class="skills-section" id="skills">
+            <h2 class="sections">Skills</h2>
+            <hr class="underline">
+            <div class="skills-flexbox">
                 <div class='row'>
                     <div class="column-skills front-end">
                         <ul class="front-end-ul">
-                            Front-End
+                            <span class="skills-span">Front-End</span>
                             <li class="skills front-end">JavaScript</li>
                             <li class="skills front-end">HTML</li>
                             <li class="skills front-end">CSS</li>
@@ -57,7 +70,7 @@
                     </div>
                     <div class="column-skills tooling-testing">
                         <ul class="tooling-testing-ul">
-                            Tooling / Testing
+                            <span class="skills-span">Tooling / Testing</span>
                             <li class="skills tooling-testing">Git / GitHub</li>
                         </ul>
                     </div>
@@ -65,23 +78,22 @@
             </div>
         </section>
 
-        <section class="projects-section">
-            <h2>Projects</h2>
+        <section class="projects-section" id="projects">
+            <h2 class="sections">Projects</h2>
+            <hr class="underline">
             <div class="project1-container">
-                <div class="project1-image">
-                    <img src="https://via.placeholder.com/300x200">
-                </div>
+                <img src="https://i.ibb.co/b50XSjq/Capture.png" alt="" class="project1-image">
                 <div class="project1-logos">
                     <img class="logo" src="https://i.pinimg.com/originals/42/3b/97/423b97b41c8b420d28e84f9b07a530ec.png" alt="logos of css, html, and js">
                 </div>
                 <div class="project-card">
-                    <h3>"Strange Laws in the US" Quiz</h3>
-                    <p>How well do you know the laws in the United States? Test your knowledge in the “Strange Laws in the US” quiz built using HTML, CSS, and JS (jQuery). 
+                    <h3 class="project1-title">"Strange Laws in the US" Quiz</h3>
+                    <p class="project1-description">How well do you know the laws in the United States? Test your knowledge in the “Strange Laws in the US” quiz built using HTML, CSS, and JS (jQuery). 
                        Just a fair warning…be prepared for the unexpected!</p>
-                    <div class="buttons">
-                        <a href="https://github.com/thinkful-ei-gecko/william-scott-quiz-app">GitHub</a>
-                        <span> | </span>
-                        <a href="https://thinkful-ei-gecko.github.io/william-scott-quiz-app/">Demo</a>
+                    <div class="links">
+                        <a href="https://github.com/thinkful-ei-gecko/william-scott-quiz-app" class="github">GitHub</a>
+                        <span class="links-span"> | </span>
+                        <a href="https://thinkful-ei-gecko.github.io/william-scott-quiz-app/" class="demo">Demo</a>
                     </div>
                 </div>
             </div>
@@ -99,20 +111,22 @@
             Section 4
         </section> -->
     </main>
-    <footer role="content-info" class="contact-section">
+    <footer role="content-info" class="contact-section" id="contact">
         <p class="footer-p">I'd love to get in touch with you!</p>
-        <p class="footer-p contact-p">Contact Me:</p>
+        <p class="contact-p">Contact Me:</p>
         <div class="contact-logos">
-            <a href="mailto: wbae912@gmail.com">
-                <img class="contact-logo" src="https://image.flaticon.com/icons/png/512/8/8807.png" alt="logo of email">
+            <a href="mailto:wbae912@gmail.com" class="logo-links">
+                <img class="contact-logo" src="https://image.flaticon.com/icons/png/512/8/8807.png" alt="logo of email" class="img-logo"> 
             </a>
-            <a href="https://github.com/wbae912">
-                <img class="contact-logo" src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="logo of github">
+            <a href="https://github.com/wbae912" class="logo-links">
+                <img class="contact-logo" src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="logo of github" class="img-logo">
             </a>
-            <a href="https://www.linkedin.com/in/william-bae-92bb5673/">
-                <img class="contact-logo" src="https://image.flaticon.com/icons/png/512/61/61109.png" alt="logo of linkedin">
+            <a href="https://www.linkedin.com/in/william-bae-92bb5673/" class="logo-links">
+                <img class="contact-logo" src="https://image.flaticon.com/icons/png/512/61/61109.png" alt="logo of linkedin" class="img-logo">
             </a>
         </div>
     </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

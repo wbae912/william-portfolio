@@ -1,98 +1,434 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: 'Karla', sans-serif;
-    font-size: 20px;
-    color: #444;
-    text-align: center;
-    line-height: 1.5;
-  }
+/* REVISE THIS PORTION LATER */
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+  color: #444;
+  /* text-align: center; */
+  line-height: 1.5;
+  margin: 0;
+}
+/* /////////////////// */
 
-  nav {
-      display: flex;
-  }
 
-  p {
-      display: inline-block;
-      width: 50%;
-      border: 1px solid black;
-  }
 
-  .nav-ul {
-      display: inline-block;
-      width: 50%;
-      border: 1px solid black;
-  }
 
-  .nav-links {
-    display: inline-block;  
-  }
 
-  nav,
-  footer {
-    padding: 1% 0;
-    background-color: #aaa;
-  }
-  
-  nav {
-    font-family: 'Spectral', serif;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-  }
-  
-  header {
-    padding: 12% 0;
-    font-family: 'Raleway', sans-serif;
-  }
-  
-  section {
-    min-height: 200px;
-    padding: 6% 0;
-    background-color: #bbb;
-  }
-  
-  section:nth-child(even) {
-    background-color: #ddd;
-  }
-  
-/* Flex Box for Skills */
 
-  .skills-flexbox {
-    margin: 15px;
-  }
-  
-  .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  
-  .column-skills {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-  }
-  
-  .skills {
-      list-style: none;
-  }
+/* THIS SECTION STYLES THE NAV */
 
-  .logo {
-      width: 100px;
-      height: 50px;
-  }
+nav {
+  padding: 1% 0;
+  background-color: black;
+}
 
-  .contact-logo {
-     width: 50px;
-  }
+.nav-p {
+  /* display: inline-block; */
+  /* border: 1px solid white; */
+  display: flex;
+  width: 50%;
+  padding-left: 5%;
+  font-size: 16px;
+  font-weight: bolder;
+  color: white;
+}
 
-  a {
-      text-decoration: none;
-  }
+.nav-ul {
+  /* display: inline-block; */
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+
+.nav-li {
+  display: inline-block;
+  margin-right: 5%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-links {
+  color: white;
+}
+
+nav {
+  font-family: 'Spectral', serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+/* NAV END */
+
+
+
+
+
+/* THIS SECTION STYLES THE HAMBURGER MENU ON MOBILE */
+.hamburger {
+  color: white;
+  height: 70px;
+  line-height: 70px;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+.menu {
+  margin: 0;
+  display: none;
+  /* border: 1px solid blue; */
+  text-align: center;
+}
+
+.menu a {
+  clear: right;
+  display: block;
+  border-bottom: 1px solid white;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  width: 120px;
+  margin: 0;
+  /* margin-right: 10%; */
+  float: right;
+}
+
+label {
+  cursor: pointer;
+  float: right;
+  margin-right: 10%
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .menu {
+  display: block;
+}
+
+label:hover {
+  color: grey;
+}
+
+/* .hamburger-a {
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: underline;
+} */
+/* END OF HAMBURGER MENU */
+
+
+
+
+
+/* THIS SECTION STYLES THE HEADER OR ABOUT ME*/
+header {
+  padding-top: 18%;
+  padding-bottom: 5%;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.hero {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://png.pngtree.com/thumb_back/fh260/back_pic/03/68/22/2357b2bc480bc98.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-heading {
+  font-size: 24px;
+  color: white;
+  text-shadow: 1px 1px black;
+  width: 80%;
+}
+
+.bio {
+  width: 80%;
+  font-size: 17px;
+  line-height: 24px;
+}
+/* END OF HEADER SECTION */
+
+
+
+
+
+/* SKILLS SECTION */
+.skills-section {
+  padding: 0;
+  padding-top: 6%;
+}
+
+.skills-flexbox {
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.sections {
+  margin: 0;
+  text-align: center;
+}
+
+.underline {
+  border: 0;
+  height: 2px;
+  width: 3rem;
+  border-top: 2px solid black;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.row {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.column-skills {
+  /* border: 1px solid orange; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.front-end-ul, .tooling-testing-ul {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.skills-span {
+  display: block;
+  font-weight: bold;
+  font-size: 22px;
+  /* border: 1px solid black; */
+  width: 100%;
+  text-align: center;
+}
+
+.skills {
+  text-align: center;
+  list-style: none;
+  /* border: 1px solid black; */
+  width: 100%;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+}
+/* END OF SKILLS SECTION */
+
+
+
+
+
+/* PROJECTS SECTION */
+.project1-container {
+  margin-top: 7%;
+  border: 1px solid darkgrey;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.project1-image {
+  width: 100% 
+}
+
+.project1-logos {
+  font-size: 10px;
+  padding-left: 2%;
+}
+
+.project1-title {
+  margin: 0;
+  font-size: 18px;
+  float: left;
+}
+
+.project-card {
+  padding: 2%;
+}
+
+.project1-description {
+  clear: left;
+  width: 100%;
+  font-size: 16px;
+  margin: 0%;
+  line-height: 23px;
+  border: none;
+  padding-top: 2%
+}
+
+.links {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+.links-span {
+  display: inline;
+  font-size: 16px;
+}
+
+.contact-logo {
+  background-color: white;
+}
+
+.github, .demo {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.github:hover, .demo:hover {
+  color: blue;
+  text-decoration: underline;
+}
+/* END OF PROJECTS SECTION */
+
+
+
+
+
+/* CONTACTS SECTION */
+footer {
+  padding: 6% 0;
+  text-align: center;
+}
+
+.footer-p {
+  font-size: 16px;
+  width: 100%;
+  color: black;
+}
+
+.contact-p {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+.contact-logos {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-logo {
+  width: 50px;
+}
+
+.logo-links {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.column-skills {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  border: 1px solid blue;
+} */
+
+
+
+
+
+/* STYLING THROUGHOUT THE WHOLE FILE*/
+p {
+  display: inline-block;
+  width: 50%;
+  /* border: 1px solid black; */
+}
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+}
+
+section:nth-child(even) {
+  background-color: #ddd;
+}
+/*END*/
+
+
+
+
+
+
+
+
+/* CHANGE THE NAV HEIGHT AND HAMBURGER LINE HEIGHTS TO 80PX ON HIGHER RES */
+
+
+/* INITIAL OPACTIY on the screenshot....remove opacity*/
+/*clicking on screenshot will take you to GitHub*/
