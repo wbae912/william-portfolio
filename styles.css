@@ -256,13 +256,18 @@ h1 {
 .project1-container {
   margin-top: 4%;
   border: 1px solid darkgrey;
-  width: 90%;
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
 }
 
 .project1-image {
-  width: 100%;
+  width: 80%;
+  display: block;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project1-logos {
@@ -273,7 +278,10 @@ h1 {
 .project1-title {
   margin: 0;
   font-size: 18px;
-  float: left;
+  text-align: center;
+  margin: 2%;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 .project-card {
@@ -324,18 +332,9 @@ h1 {
 
 
 /* CONTACTS SECTION */
-footer {
-  padding: 0;
+.contact-section {
   text-align: center;
-  border-top: 1px solid black;
-  margin-top: 5%;
-}
-
-.footer-p {
-  font-size: 17px;
-  width: 100%;
-  color: black;
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .contact-p {
@@ -351,7 +350,7 @@ footer {
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2%;
+  margin-bottom: 0;
 }
 
 .contact-logo {
@@ -362,6 +361,12 @@ footer {
   text-decoration: none;
 }
 /* END CONTACTS SECTION */
+
+footer {
+  background-color: black;
+  overflow: auto;
+  height: 40px;
+}
 
 
 
@@ -388,7 +393,7 @@ footer {
   .hero {
     margin-bottom: 2%;
   }
-  .skills-section, .projects-section {
+  .skills-section, .projects-section, .contact-section {
     padding-top: 2%;
   }
   .sections {
@@ -415,7 +420,10 @@ footer {
     /* border: 1px solid blue; */
   }
   .project1-container {
-    width: 70%;
+    width: 60%;
+  }
+  .project1-title {
+    font-size: 22px;
   }
   .links {
     margin-bottom: 3%;
@@ -471,7 +479,7 @@ footer {
     font-size: 20px;
     line-height: 27px;
   }
-  .skills-section, .projects-section {
+  .skills-section, .projects-section, .contact-section {
     padding-top: 3%;
   }
   .sections {
@@ -487,8 +495,11 @@ footer {
     margin-top: 3%;
     margin-bottom: 3%;
   }
+  .project1-container {
+    width: 50%;
+  }
   .project1-title {
-    font-size: 22px;
+    font-size: 34px;
   }
   .project1-description {
     font-size: 20px;
@@ -527,10 +538,6 @@ p {
 section {
   min-height: 200px;
   padding: 2% 0;
-}
-
-section:nth-child(even) {
-  background-color: #ddd;
 }
 /*END*/
 
