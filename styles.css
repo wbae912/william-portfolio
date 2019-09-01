@@ -21,8 +21,19 @@ body {
 /* THIS SECTION STYLES THE NAV */
 
 nav {
-  padding: 1% 0;
+  font-family: 'Spectral', serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
   background-color: black;
+  padding: 1% 0;
 }
 
 .nav-p {
@@ -31,7 +42,7 @@ nav {
   display: flex;
   width: 50%;
   padding-left: 5%;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bolder;
   color: white;
 }
@@ -55,20 +66,6 @@ nav {
 
 .nav-links {
   color: white;
-}
-
-nav {
-  font-family: 'Spectral', serif;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
 }
 /* NAV END */
 
@@ -122,12 +119,9 @@ label {
 label:hover {
   color: grey;
 }
-
-/* .hamburger-a {
-  cursor: pointer;
-  font-size: 20px;
-  text-decoration: underline;
-} */
+.hamburger-a {
+  font-family: 'Karla', sans-serif;
+}
 /* END OF HAMBURGER MENU */
 
 
@@ -136,7 +130,7 @@ label:hover {
 
 /* THIS SECTION STYLES THE HEADER OR ABOUT ME*/
 header {
-  padding-top: 18%;
+  padding-top: 65px;
   padding-bottom: 5%;
   font-family: 'Raleway', sans-serif;
   text-align: center;
@@ -260,7 +254,7 @@ h1 {
 
 /* PROJECTS SECTION */
 .project1-container {
-  margin-top: 7%;
+  margin-top: 4%;
   border: 1px solid darkgrey;
   width: 90%;
   margin-right: auto;
@@ -268,7 +262,7 @@ h1 {
 }
 
 .project1-image {
-  width: 100% 
+  width: 100%;
 }
 
 .project1-logos {
@@ -331,14 +325,17 @@ h1 {
 
 /* CONTACTS SECTION */
 footer {
-  padding: 6% 0;
+  padding: 0;
   text-align: center;
+  border-top: 1px solid black;
+  margin-top: 5%;
 }
 
 .footer-p {
-  font-size: 16px;
+  font-size: 17px;
   width: 100%;
   color: black;
+  margin-bottom: 0;
 }
 
 .contact-p {
@@ -354,6 +351,7 @@ footer {
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2%;
 }
 
 .contact-logo {
@@ -363,45 +361,161 @@ footer {
 .logo-links {
   text-decoration: none;
 }
+/* END CONTACTS SECTION */
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  border: 1px solid black;
+/* MEDIA QUERY STYLING FOR TABLETS */
+@media only screen and (min-width: 750px) {
+  nav {
+    height: 80px;
+  }
+  .nav-p {
+    font-size: 28px;
+  }
+  label {
+    font-size: 24px;
+  }
+  header {
+    padding-top: 75px;
+    padding-bottom: 2.5%;
+  }
+  .hero-heading {
+    font-size: 30px;
+  }
+  .hero {
+    margin-bottom: 2%;
+  }
+  .skills-section, .projects-section {
+    padding-top: 2%;
+  }
+  .sections {
+    font-size: 34px;
+  }
+  .skills-span {
+    font-size: 22px;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    /* border: 1px solid black; */
+  }
+  .column-skills {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    /* border: 1px solid blue; */
+  }
+  .project1-container {
+    width: 70%;
+  }
+  .links {
+    margin-bottom: 3%;
+    margin-top: 5%;
+  }
+  .github, .links-span, .demo {
+    font-size: 20px;
+    margin-right: 1.5%;
+  }
+  .footer-p {
+    font-size: 20px;
+  }
+  .contact-p {
+    font-size: 22px;
+  }
+  .contact-logos {
+    justify-content: space-around;
+  }
 }
-
-.column-skills {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  border: 1px solid blue;
-} */
+/* END OF STYLING FOR TABLET */
 
 
-
-
+/* MEDIA QUERY STYLING FOR DESKTOP */
+@media only screen and (min-width: 1300px) {
+  nav {
+    height: 120px;
+  }
+  .nav-p {
+    font-size: 42px;
+  }
+  .menu {
+    margin-right: 5%;
+  }
+  label {
+    font-size: 36px;
+  }
+  header {
+    padding-top: 115px;
+    padding-bottom: 2.5%;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  .hero-heading {
+    width: 50%;
+    font-size: 43px;
+  }
+  .hero {
+    margin-bottom: 2%;
+    height: 450px;
+  }
+  .bio {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .skills-section, .projects-section {
+    padding-top: 3%;
+  }
+  .sections {
+    font-size: 50px;
+  }
+  .skills-span {
+    font-size: 34px;
+  }
+  .skills {
+    font-size: 24px;
+  }
+  .row {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .project1-title {
+    font-size: 22px;
+  }
+  .project1-description {
+    font-size: 20px;
+    padding-top: 1%;
+    line-height: 27px;
+  }
+  .links {
+    margin-bottom: 2%;
+    margin-top: 4%;
+  }
+  .github, .links-span, .demo {
+    font-size: 28px;
+    margin-right: 2%;
+  }
+  .footer-p {
+    font-size: 28px;
+  }
+  .contact-p {
+    font-size: 30px;
+  }
+  .contact-logos {
+    justify-content: space-around;
+    margin-bottom: 3%;
+    margin-top: 1%;
+  }
+}
+/* END OF DESKTOP STYLING */
 
 /* STYLING THROUGHOUT THE WHOLE FILE*/
 p {
@@ -412,7 +526,7 @@ p {
 
 section {
   min-height: 200px;
-  padding: 6% 0;
+  padding: 2% 0;
 }
 
 section:nth-child(even) {
