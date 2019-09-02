@@ -67,6 +67,10 @@ nav {
 .nav-links {
   color: white;
 }
+
+.nav-ul {
+  display: none;
+}
 /* NAV END */
 
 
@@ -127,7 +131,6 @@ label:hover {
 
 
 
-
 /* THIS SECTION STYLES THE HEADER OR ABOUT ME*/
 header {
   padding-top: 65px;
@@ -159,7 +162,7 @@ h1 {
 }
 
 .bio {
-  width: 80%;
+  width: 75%;
   font-size: 17px;
   line-height: 24px;
 }
@@ -192,10 +195,11 @@ h1 {
 .underline {
   border: 0;
   height: 2px;
-  width: 3rem;
-  border-top: 2px solid black;
+  border-top: 1px solid #C9C9C9;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .row {
@@ -253,6 +257,10 @@ h1 {
 
 
 /* PROJECTS SECTION */
+.projects-section {
+  padding-bottom: 6%;
+}
+
 .project1-container {
   margin-top: 4%;
   border: 1px solid darkgrey;
@@ -484,6 +492,7 @@ footer {
   }
   .sections {
     font-size: 50px;
+
   }
   .skills-span {
     font-size: 34px;
@@ -525,6 +534,22 @@ footer {
     margin-bottom: 3%;
     margin-top: 1%;
   }
+  .hamburger {
+    display: none;
+  }
+  .nav-ul {
+    display: flex;   
+  }
+  .nav-links {
+    text-decoration: none;
+    font-family: 'Karla', sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .nav-links:hover {
+    text-decoration: underline;
+    color: grey;
+  }
 }
 /* END OF DESKTOP STYLING */
 
@@ -539,16 +564,20 @@ section {
   min-height: 200px;
   padding: 2% 0;
 }
+
+.underline-mini {
+  border: 0;
+  height: 2px;
+  width: 3rem;
+  border-top: 2px solid black;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /*END*/
 
 
 
 
-
-
-
-
-/* CHANGE THE NAV HEIGHT AND HAMBURGER LINE HEIGHTS TO 80PX ON HIGHER RES */
 
 
 /* INITIAL OPACTIY on the screenshot....remove opacity*/
