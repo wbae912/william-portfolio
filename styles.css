@@ -124,7 +124,7 @@ h1 {
 }
 
 .hero {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://png.pngtree.com/thumb_back/fh260/back_pic/03/68/22/2357b2bc480bc98.jpg');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('https://media.licdn.com/dms/image/C5616AQEw0yyq779WxA/profile-displaybackgroundimage-shrink_350_1400/0?e=1582156800&v=beta&t=IcRr33R0S2qo0-ZlmaYDQyPRI3LYxY6pPV0tx0LQnBY');
   background-repeat: no-repeat;
   background-size: cover;
   height: 250px;
@@ -162,7 +162,6 @@ h1 {
   align-items: center;
 }
 
-
 .sections {
   margin: 0;
   text-align: center;
@@ -194,7 +193,7 @@ h1 {
   width: 90%;
 }
 
-.front-end-ul, .tooling-testing-ul {
+.front-end-ul, .back-end-ul, .tooling-testing-ul {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -229,16 +228,23 @@ h1 {
   padding-bottom: 6%;
 }
 
-.project1-container {
+.project-container {
   margin-top: 4%;
-  border: 1px solid darkgrey;
-  width: 80%;
+  border: 2px solid darkgrey;
+  border-radius: 20px;
+  width: 90%;
   margin-right: auto;
   margin-left: auto;
+  transition: ease width 0.3s;
 }
 
-.project1-image {
-  width: 80%;
+.project-container:hover {
+  width: 93%;
+  box-shadow: 0 0 5px darkgrey;
+}
+
+.project-image {
+  width: 90%;
   display: block;
   margin-top: 1%;
   margin-bottom: 2%;
@@ -246,12 +252,41 @@ h1 {
   margin-right: auto;
 }
 
-.project1-logos {
-  font-size: 10px;
-  padding-left: 2%;
+.project-underline {
+  border: 0;
+  height: 2px;
+  border-top: 1px solid #C9C9C9;
+  margin-top: 0;
+  margin-bottom: 4px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
-.project1-title {
+.project-techs {
+  font-size: 10px;
+  padding-left: 2%;
+  text-align: center;
+}
+
+.tech-heading {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.tech-ul {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+.tech {
+  font-size: 16px;
+}
+
+.project-title {
   margin: 0;
   font-size: 18px;
   text-align: center;
@@ -262,9 +297,10 @@ h1 {
 
 .project-card {
   padding: 2%;
+  padding-top: 0;
 }
 
-.project1-description {
+.project-description {
   clear: left;
   width: 100%;
   font-size: 16px;
@@ -277,8 +313,8 @@ h1 {
 .links {
   text-align: center;
   font-size: 16px;
-  margin-top: 7%;
-  margin-bottom: 7%;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .links-span {
@@ -290,6 +326,13 @@ h1 {
   background-color: white;
 }
 
+.github-span {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .github, .demo {
   color: black;
   font-weight: bold;
@@ -298,7 +341,7 @@ h1 {
 }
 
 .github:hover, .demo:hover {
-  color: #163361;
+  color: rgb(59, 59, 224);
   text-decoration: underline;
 }
 /* PROJECTS END */
@@ -387,18 +430,29 @@ footer {
     flex-basis: 100%;
     flex: 1;
   }
-  .project1-container {
-    width: 60%;
+  .project-container {
+    width: 70%;
   }
-  .project1-title {
+  .project-container:hover {
+    width: 75%;
+  }
+  .project-title {
     font-size: 22px;
   }
-  .links {
-    margin-bottom: 3%;
-    margin-top: 5%;
+  .tech-heading {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .tech-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .tech {
+    font-size: 18px;
   }
   .github, .links-span, .demo {
-    font-size: 20px;
+    font-size: 18px;
     margin-right: 1.5%;
   }
   .footer-p {
@@ -464,23 +518,28 @@ footer {
     margin-top: 3%;
     margin-bottom: 3%;
   }
-  .project1-container {
-    width: 50%;
+  .project-container {
+    width: 65%;
   }
-  .project1-title {
+  .project-container:hover {
+    width: 70%;
+  }
+  .project-title {
     font-size: 34px;
   }
-  .project1-description {
+  .project-description {
     font-size: 20px;
     padding-top: 1%;
     line-height: 27px;
   }
-  .links {
-    margin-bottom: 2%;
-    margin-top: 4%;
+  .tech-heading {
+    font-size: 22px;
+  }
+  .tech {
+    font-size: 20px;
   }
   .github, .links-span, .demo {
-    font-size: 28px;
+    font-size: 22px;
     margin-right: 2%;
   }
   .footer-p {
