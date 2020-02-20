@@ -124,7 +124,7 @@ h1 {
 }
 
 .hero {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('https://media.licdn.com/dms/image/C5616AQEw0yyq779WxA/profile-displaybackgroundimage-shrink_350_1400/0?e=1582156800&v=beta&t=IcRr33R0S2qo0-ZlmaYDQyPRI3LYxY6pPV0tx0LQnBY');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('assets/hero_image.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 250px;
